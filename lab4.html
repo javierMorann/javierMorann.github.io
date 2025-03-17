@@ -6,6 +6,7 @@
     var number;
     now = new Date();
     hour = now.getHours();
+    now.setDate(now.getDate() + 7);
 
     alert("welcome to my store, make yourself at home");
 
@@ -13,19 +14,20 @@
     item = window.prompt("what item would you like to order?");
     number = window.prompt("how many would you like to order?");
     if(hour <12){
-   document.write("good morning " + name + " welcome to my store and thank you for ordering <br>");
+   document.write("good morning " + name + " ,welcome to my store and thank you for ordering <br>");
   }
   else if(hour < 18)
-  { document.write("good afternoon " + name + " welcome to my store and thank you for ordering <br>");   
+  { document.write("good afternoon " + name + " ,welcome to my store and thank you for ordering <br>");   
   }
   else
-  { document.write("good evening " + name + " welcome to my store and thank you for ordering <br>");
+  { document.write("good evening " + name + " ,welcome to my store and thank you for ordering <br>");
   }
   
-  document.write("You ordered:" + item + " and the quantity is "+ number + "<br>");
+  document.write("You ordered: " + item + " and the quantity is "+ number + "<br>");
   
   document.write("today is " + now + " and time is " + hour +"<br>");
 
+  document.write(" your order will come in 7 days from now, it will arrive in "+ now.toDateString());
 
 
 

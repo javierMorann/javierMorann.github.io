@@ -5,8 +5,9 @@
     var item;
     var number;
     now = new Date();
+    future = new Date(now);
     hour = now.getHours();
-    now.setDate(now.getDate() + 7);
+    future.setDate(now.getDate() + 7);
 
     alert("welcome to my store, make yourself at home");
 
@@ -27,7 +28,7 @@
   
   document.write("today is " + now + " and time is " + hour +"<br>");
 
-  document.write(" your order will come in 7 days from now, it will arrive in "+ now.toDateString());
+  document.write(" your order will come in 7 days from now, it will arrive in "+ future.toDateString());
 
 
 

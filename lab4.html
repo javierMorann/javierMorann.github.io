@@ -9,7 +9,16 @@
 
     alert("welcome to my store, make yourself at home");
 
-    name = window.prompt
+    name = window.prompt("what is your name fellow patron?");
+    if(hour <12){
+   document.write("good morning " + name + " welcome to my store and thank you for ordering");
+  }
+  else if(hour < 18)
+  { document.write("good afternoon " + name + " welcome to my store and thank you for ordering");   
+  }
+  else
+  { document.write("good evening " + name + " welcome to my store and thank you for ordering");
+  }
 
   </script>
 </head>

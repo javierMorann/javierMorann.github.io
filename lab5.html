@@ -59,20 +59,18 @@
   function Signupp()
     {
     var element = document.getElementById("signupp");
-    var elemsArry1 = Array.from(element);
-    var submission = true;
-    elemsArry1.forEach((element) => console.log(element.first + " " + element.last));
-
-    document.getElementById("demo").innerText = "first: " + first + ", last: " + last + ", email: " + email + ", password: " + password;
-  
+    var first = element.elements["first"].value;
+    var last = element.elements["last"].value; 
+    
+    document.getElementById("demo").innerText = "first: " + first + ", last: " + last;
     }
+ 
 
 </script>
   <form id= "signupp">
     first name: <input type="text" name="first" value ="firstname"><br>
     last name: <input type="text" name="last" value ="lastname"><br>
-    email: <input type="text" name="email" value ="email"><br>
-    password: <input type="text" name="password" value ="password"><br>
+    
   </form>
   <button onclick="Signupp()">signupp</button>
   <p id="demo"></p>

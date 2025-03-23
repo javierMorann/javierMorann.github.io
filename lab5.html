@@ -63,6 +63,7 @@
     var last = document.getElementById("last").value;
     var gmail = document.getElementById("gmail").value;
     var password = document.getElementById("password").value;
+    if(password)
     
     document.getElementById("demo").innerText = "first: " + firs + ", last: " + last + ", gmail: " + gmail + ", password: " + password;
     }
@@ -70,13 +71,13 @@
 
 </script>
   <form id= "signupp">
-    first name: <input type="text" name="first" value ="firstname"><br>
-    last name: <input type="text" name="last" value ="lastname"><br>
-    gmail: <input type="text" name="gmail" value ="gmail"><br>
-    password: <input type="text" name="password" value ="password"><br>
+    first name: <input type="text" name="firs" id="firs" value ="firstname"><br>
+    last name: <input type="text" name="last" id="last" value ="lastname"><br>
+    gmail: <input type="text" name="gmail" id="gmail" value ="gmail"><br>
+    password: <input type="text" name="password" id="password" value ="password"><br>
     
   </form>
-  <button onclick="Signupp()">REGISTER</button>
+  <button onclick="Signupp()">signupp</button>
   <p id="demo"></p>
 
   <hr>

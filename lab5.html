@@ -63,7 +63,11 @@
     var last = document.getElementById("last").value;
     var gmail = document.getElementById("gmail").value;
     var password = document.getElementById("password").value;
-    if(password)
+    if(!password.includes("!"))
+    {
+      alert("password needs ! pls");
+    }
+   
     
     document.getElementById("demo").innerText = "first: " + firs + ", last: " + last + ", gmail: " + gmail + ", password: " + password;
     }
@@ -71,8 +75,8 @@
 
 </script>
   <form id= "signupp">
-    first name: <input type="text" name="firs" id="firs" value ="firstname"><br>
-    last name: <input type="text" name="last" id="last" value ="lastname"><br>
+    first name: <input type="text" name="firs" id="firs" value ="first name"><br>
+    last name: <input type="text" name="last" id="last" value ="last name"><br>
     gmail: <input type="text" name="gmail" id="gmail" value ="gmail"><br>
     password: <input type="text" name="password" id="password" value ="password"><br>
     

@@ -63,9 +63,9 @@
     var last = document.getElementById("last").value;
     var gmail = document.getElementById("gmail").value;
     var password = document.getElementById("password").value;
-    if(!password.includes("!")&& !password.includes("?"))
+    if(!password.includes("!") || !password.includes("?"))
     {
-      alert("password needs ! pls");
+      alert("please you need both ! and ? in your password");
     }
    
     

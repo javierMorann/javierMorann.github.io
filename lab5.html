@@ -58,11 +58,13 @@
 <script>
   function Signupp()
     {
-    var element = document.getElementById("signupp");
-    var first = element.elements["first"].value;
-    var last = element.elements["last"].value; 
+   
+    var firs = document.getElementById("firs").value;
+    var last = document.getElementById("last").value;
+    var gmail = document.getElementById("gmail").value;
+    var password = document.getElementById("password").value;
     
-    document.getElementById("demo").innerText = "first: " + first + ", last: " + last;
+    document.getElementById("demo").innerText = "first: " + firs + ", last: " + last + ", gmail: " + gmail + ", password: " + password;
     }
  
 
@@ -70,9 +72,11 @@
   <form id= "signupp">
     first name: <input type="text" name="first" value ="firstname"><br>
     last name: <input type="text" name="last" value ="lastname"><br>
+    gmail: <input type="text" name="gmail" value ="gmail"><br>
+    password: <input type="text" name="password" value ="password"><br>
     
   </form>
-  <button onclick="Signupp()">signupp</button>
+  <button onclick="Signupp()">REGISTER</button>
   <p id="demo"></p>
 
   <hr>

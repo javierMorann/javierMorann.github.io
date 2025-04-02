@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head> 
     <meta charset="utf-8"> 
@@ -39,19 +39,28 @@
 
 <script>
 
-  function Signupp()
+  function cattsss()
     {
-   
+     const url = ‘https://brianobruno.github.io/cats.json';
+     const options =
+        {
+          method: ‘GET',
+        };
+     const response = await fetch(url,
+     options);
+     const result = await
+     response.text();
+     const myObj = JSON.parse(result);
     
     }
  
    
 </script>
-  <form id= "signupp">
+  <form id= "cattsss">
     
-    
+
   </form>
-  <button onclick="Signupp()">signupp</button>
+  <button onclick="cattsss()">PRESS</button>
   <p id="demo"></p>
 
   <hr>

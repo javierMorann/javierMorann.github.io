@@ -39,15 +39,15 @@
 
 <script>
 
-  function cattsss()
+  async function cattsss()
     {
-     const url = ‘https://brianobruno.github.io/cats.json';
+     const url = 'https://brianobruno.github.io/cats.json';
      const options =
         {
-          method: ‘GET',
+          method: 'GET',
         };
-     const response = await fetch(url,
-     options);
+
+     const response = await fetch(url,options);
      const result = await
      response.text();
      const myObj = JSON.parse(result);

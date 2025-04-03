@@ -59,13 +59,13 @@
      
      let kittyfat = "";
      myObj.facts.forEach(fact => {
-      kittyfat += `<p>Fact ${fact.factId} : ${fact.text}</p>`;
+      kittyfat += `<tr> <td> ${fact.factId}</td> <td> ${fact.text}</td> </tr>`;
       });
-       document.getElementById("demo").innerHTML = kittyfat;
+       document.getElementById("rowws").innerHTML = kittyfat;
 
        document.getElementById("photo?").src = myObj.catPhoto;
 
-       
+    
 
     }
 </script>
@@ -81,18 +81,12 @@
                     <th>fact</th>
                 </tr>
             </thead>
-            <tbody>
-              <tr>
-
-                
-              </tr>
-
-
-            </tbody>
+            <tbody>id ="rowws" </tbody>
 
 
         </table>
     </div>
+ </div>
   <p id="demo"></p>
   <img id="photo?">
 

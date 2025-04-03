@@ -59,7 +59,7 @@
      
      let kittyfat = "";
      myObj.facts.forEach(fact => {
-      kittyfat += `<p>Fact ${fact.factId}:< ${fact.text}</p>`;
+      kittyfat += `<p>Fact ${fact.factId} : ${fact.text}</p>`;
       });
        document.getElementById("demo").innerHTML = kittyfat;
 
@@ -70,10 +70,29 @@
     }
 </script>
   <form id= "cattsss">
-    
-
   </form>
   <button onclick="cattsss()">PRESS</button>
+  <div class="container">
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>factID</th>
+                    <th>fact</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+                
+              </tr>
+
+
+            </tbody>
+
+
+        </table>
+    </div>
   <p id="demo"></p>
   <img id="photo?">
 

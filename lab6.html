@@ -51,11 +51,23 @@
      const result = await
      response.text();
      const myObj = JSON.parse(result);
-    
-     document.getElementById("demo").innerHTML = JSON.stringify(myObj);
+
+
+     
+
+     myObj.facts.sort((a, b) => a.factId - b.factId);
+     
+     let kittyfat = "";
+     myObj.facts.forEach(fact => {
+      kittyfat += `<p>Fact ${fact.factId}:< ${fact.text}</p>`;
+      });
+       document.getElementById("demo").innerHTML = kittyfat;
+
+
+
+
+
     }
- 
-   
 </script>
   <form id= "cattsss">
     
